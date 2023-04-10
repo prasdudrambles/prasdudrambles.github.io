@@ -20,7 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:prasdudwastaken@gmail.com"}
+  - {title: Mail, icon: envelope, url: "mailto:prasdud@protonmail.com"}
   - {title: Github, icon: github, url: "https://github.com/prasdud"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
