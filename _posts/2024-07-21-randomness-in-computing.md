@@ -4,7 +4,7 @@ layout: post
 ---
 
 
-tl;dr - random numbers aren't really random. Well, sometimes they are, but not really, it depends wether you think we live in a deterministic universe or not. Does it really matter if a number is true random? Sometimes.
+tl;dr -Random numbers aren't really random. Well, sometimes they are, but not really, it depends wether you think we live in a deterministic universe or not. Does it really matter if a number is true random? Sometimes.
 
 
 ![randomness](/assets/images/it-never-was.jpg){:height="600px" width="600px"}
