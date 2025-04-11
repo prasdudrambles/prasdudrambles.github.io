@@ -22,6 +22,7 @@ The 2 most popular methods in WPS are either a WPS push button, where the user p
 The other method is more secure (but not really), where the user enters an 8 digit pin to connect the device.
 
 This method is the target for Pixie Dust attacks.
+
 ---
 
 <h1>HOW CAN WE HACK IT</h1>
