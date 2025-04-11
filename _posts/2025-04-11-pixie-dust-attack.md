@@ -30,7 +30,7 @@ This method is the target for Pixie Dust attacks.
 
 ![pixie dust](/assets/images/pixie_dust_2.png){:height="300px" width="600px"}
 
-The working of the Pixie Dust attack occurs in 3 phases
+The working of the Pixie Dust attack occurs in 2 phases
 
 Handshake Capture
 ---
