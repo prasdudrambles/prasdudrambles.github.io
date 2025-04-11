@@ -25,15 +25,30 @@ This method is the target for Pixie Dust attacks.
 
 ---
 
-<h1>HOW CAN WE HACK IT</h1>
-
----
-
 <h1>THE PIXIE DUST ATTACK</h1>
 
 
 ![pixie dust](/assets/images/pixie_dust_2.png){:height="300px" width="600px"}
 
+The working of the Pixie Dust attack occurs in 3 phases
+
+Handshake Capture
+---
+The attacker sends a WPS request to the router. To the router, it looks like an innocent device trying to connect to the router via WPS.
+
+The router and the attacker (the router does not know this) talk to each other sending various messages, but the only one we need for the attack are called M1 message and M2 message.
+
+M1 Message - is the message sent from the attacker to the router, informing the router that it wants to connect. The attacker generates a nonce (random number) and a Diffie-Hellman key pair and shares the PKe (public key) to the router.
+
+M2 Message - is the message sent from the router to the attacker, telling the router "Okay, let's connect!". The M2 message contains the routers nonce and its PKr.
+
+The AuthKey is also sent. This key is used to prove authenticity of the handshake data.
+
+Offline Cryptographic Attack
+---
+In this phase, the attacker takes the data collected from the previous phase and tries to use math to reconstruct the router's private key, and then use that to compute the WPS pin.
+
+We are depending on the fact that some (or most old) routers reuse the same private key, or the nonce which is generated is of weak entropy (not truly random). Using this we can bruteforce the routers private key using PKr and the nonce. Finally we can test each guess against the captured AuthKey from the handshake phase. If a match is found, we have found the WPS pin!
 
 ---
 
